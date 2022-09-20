@@ -360,7 +360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4405134414608374, guid: d0d4f790b0dfc964e8b08cfec840278c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4405134414608374, guid: d0d4f790b0dfc964e8b08cfec840278c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -575,3 +575,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c6fb9a8d9f523b459952477ace705e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkSpeed: 1.75
+  animator: {fileID: 1933266718}
+--- !u!95 &1933266718
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933266715}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 9d9569a11a06f464bb9a5618bdd51bba, type: 3}
+  m_Controller: {fileID: 9100000, guid: 2a03e93127ad9b9439eae413342bf145, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
