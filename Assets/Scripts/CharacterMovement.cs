@@ -9,7 +9,9 @@ public class CharacterMovement : MonoBehaviour
     private float movemntSqrMagnitude;
     public float walkSpeed = 1.75f;
     public Animator animator;
-
+    public AudioSource footStep;
+    public AudioClip[] difFootSteps;
+    public AudioSource background;
     
     public void Update()
     {
@@ -47,6 +49,19 @@ public class CharacterMovement : MonoBehaviour
     }
     public void FootstepAudio()
     {
+        if (movemntSqrMagnitude > 0.25f && !footStep.isPlaying)
+        {
+            footStep.clip = difFootSteps[1];
+            footStep.Play();
+            footStep.volume = movemntSqrMagnitude;
+            background.volume = 0.5f;
+        }
 
+        else if(movemntSqrMagnitude < 0.25f && footStep.isPlaying)
+        {
+            footStep.Stop();
+            background.volume = 1.0f;
+        }
+            
     }
 }
